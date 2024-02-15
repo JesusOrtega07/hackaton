@@ -13,52 +13,69 @@ func prueba(){
 
 
 import SwiftUI
+import SwiftUI
 
-struct Weight_Plate: View {
-    @State var weight: String = "135"
-    @State var plate_hash = [String]()
-    @State var plate_array = [45, 35, 25, 10, 5, 2.5]
+struct ContentView: View {
+    @State private var desiredWeight = ""
+    @State private var calculatedPlates: [Double] = []
+    @State private var message = ""
+    @State private var showingAlert = false
 
     var body: some View {
-        var one_side_weight = Double(Int(weight)! - 45) / 2.0
+        VStack {
+            TextField("Enter Desired Weight", text: $desiredWeight) // Obtencion del peso en el textfield
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
 
-        List{
-            Text("Number of Plates Needed Per Side")
-                .multilineTextAlignment(.center)
-            ForEach(self.plate_array, id: \.self) { plate_size in
-                var plate_amount = (one_side_weight / plate_size)
-                if Int(weight) == 45 {
-                    Text("You only need the bar!")
-                } else if Int(weight)! < 45 {
-                    Text("Must be divisible by 5!")
-                } else if (Int(weight)! % 5 != 0) {
-                       Text("Must be divisible by 5!")
-                } else {
-                        //Text("Error")
-                        plate_amount.round(.towardZero)
-                        one_side_weight -= (plate_size * plate_amount)
-                    Text("\(Int(plate_size)) x \(Int(plate_amount))")
+            Button("Calculate Weights", action: calculatePlates)// Llama a la función
 
-                       // Text("\(plate):\(Int(plate_amount))")
+            List {
+                ForEach(calculatedPlates, id: \.self) { calculatedPlate in
+                    Text("\(calculatedPlate, specifier: "%.1f")")
+                }
             }
         }
+        .alert(isPresented: $showingAlert) {
+            Alert(title: Text(message), dismissButton: .default(Text("OK")))
+        }
+    }
+    
+    func calcularSuma(num1 : Int, num2 : Int){
+        
+    }
 
-        HStack(alignment: .center) {
-            Text("Weight:")
-                .font(.callout)
-                .bold()
-            TextField("Enter Desired Weight", text: $weight)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-        }.padding()
+    func calculatePlates() {
+        calculatedPlates = []
+        let plates = [45, 35, 25, 10, 5, 2.5]
+
+        if let weight = Double(desiredWeight) { // Check that it a Double
+            if weight == 45 {
+                message = "You only need the bar!"
+                showingAlert = true
+            } else if weight < 45 {
+                message = "Must be above bar weight of 45"
+                showingAlert = true
+            } else if (Int(weight) % 5) != 0 {
+                message = "Must be divisible by 5"
+                showingAlert = true
+            } else {
+                var oneSideWeight = (weight - 45) / 2
+
+                for plate in plates {
+                    while (oneSideWeight - plate) >= 0 {
+                        oneSideWeight -= plate
+                        calculatedPlates.append(plate)
+                    }
+                }
+            }
+        }else {
+            message = "Enter a valid number"
+            showingAlert = true
+            return
+        }
     }
 }
 
-}
-struct Weight_Plate_Previews: PreviewProvider {
-    static var previews: some View {
-        Weight_Plate()
-    }
-}
 #Preview {
-    Weight_Plate()
+    ContentView()
 }

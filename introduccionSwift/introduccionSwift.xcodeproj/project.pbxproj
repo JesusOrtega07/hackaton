@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D5A8E272B7ED264005F231D /* Calculadora.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5A8E262B7ED264005F231D /* Calculadora.swift */; };
 		0DB34C842B7EB60F007427B4 /* introduccionSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB34C832B7EB60F007427B4 /* introduccionSwiftApp.swift */; };
 		0DB34C862B7EB60F007427B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB34C852B7EB60F007427B4 /* ContentView.swift */; };
 		0DB34C882B7EB612007427B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DB34C872B7EB612007427B4 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D5A8E262B7ED264005F231D /* Calculadora.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculadora.swift; sourceTree = "<group>"; };
 		0DB34C802B7EB60F007427B4 /* introduccionSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = introduccionSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DB34C832B7EB60F007427B4 /* introduccionSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = introduccionSwiftApp.swift; sourceTree = "<group>"; };
 		0DB34C852B7EB60F007427B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				0DB34C832B7EB60F007427B4 /* introduccionSwiftApp.swift */,
 				0DB34C852B7EB60F007427B4 /* ContentView.swift */,
+				0D5A8E262B7ED264005F231D /* Calculadora.swift */,
 				0DB34C872B7EB612007427B4 /* Assets.xcassets */,
 				0DB34C892B7EB612007427B4 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D5A8E272B7ED264005F231D /* Calculadora.swift in Sources */,
 				0DB34C862B7EB60F007427B4 /* ContentView.swift in Sources */,
 				0DB34C842B7EB60F007427B4 /* introduccionSwiftApp.swift in Sources */,
 			);
