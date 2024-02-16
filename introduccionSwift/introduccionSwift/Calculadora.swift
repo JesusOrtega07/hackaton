@@ -40,6 +40,37 @@ struct Calculadora: View {
                         .cornerRadius(8)
                 }
             }
+            VStack{
+                HStack{
+                    Button(action : {suma(num1: 2, num2: 6)}){
+                        Text("1")
+                            .frame(width: 25,height: 25)
+                            .padding()
+                            .background(Color.green)
+                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                            .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                            .cornerRadius(8)
+                    }
+                    Button(action : {suma(num1: 2, num2: 6)}){
+                        Text("1")
+                            .frame(width: 25,height: 25)
+                            .padding()
+                            .background(Color.green)
+                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                            .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                            .cornerRadius(8)
+                    }
+                    Button(action : {suma(num1: 2, num2: 6)}){
+                        Text("1")
+                            .frame(width: 25,height: 25)
+                            .padding()
+                            .background(Color.green)
+                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                            .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                            .cornerRadius(8)
+                    }
+                }
+            }
         }
     }
 }
