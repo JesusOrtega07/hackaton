@@ -12,6 +12,7 @@
 		0DB34C862B7EB60F007427B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB34C852B7EB60F007427B4 /* ContentView.swift */; };
 		0DB34C882B7EB612007427B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DB34C872B7EB612007427B4 /* Assets.xcassets */; };
 		0DB34C8B2B7EB612007427B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DB34C8A2B7EB612007427B4 /* Preview Assets.xcassets */; };
+		0DB396B72B7FFEB500F5A274 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB396B62B7FFEB500F5A274 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		0DB34C852B7EB60F007427B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0DB34C872B7EB612007427B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DB34C8A2B7EB612007427B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0DB396B62B7FFEB500F5A274 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				0DB34C832B7EB60F007427B4 /* introduccionSwiftApp.swift */,
 				0DB34C852B7EB60F007427B4 /* ContentView.swift */,
 				0D5A8E262B7ED264005F231D /* Calculadora.swift */,
+				0DB396B62B7FFEB500F5A274 /* SwiftUIView.swift */,
 				0DB34C872B7EB612007427B4 /* Assets.xcassets */,
 				0DB34C892B7EB612007427B4 /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				0D5A8E272B7ED264005F231D /* Calculadora.swift in Sources */,
 				0DB34C862B7EB60F007427B4 /* ContentView.swift in Sources */,
+				0DB396B72B7FFEB500F5A274 /* SwiftUIView.swift in Sources */,
 				0DB34C842B7EB60F007427B4 /* introduccionSwiftApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
