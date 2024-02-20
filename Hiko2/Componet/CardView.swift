@@ -23,7 +23,7 @@ struct CardView: View {
                     .resizable()
                     .scaledToFit()
             }
-        }
+        }.frame(width: 350, height: 600)
     }
 }
 
