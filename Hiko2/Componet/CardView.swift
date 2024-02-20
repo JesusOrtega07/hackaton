@@ -9,7 +9,21 @@ import SwiftUI
 
 struct CardView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        ZStack {
+            BackgroundView()
+                
+            ZStack {
+                Circle()
+                    .fill(
+                        LinearGradient(
+                            colors: [Color("ColorIndigoMedium"),Color("ColorSalmonLight")], startPoint: .topLeading, endPoint: .bottomTrailing)
+                    ).frame(width: 250,height: 250)
+                Image("image-1")
+                    .resizable()
+                    .scaledToFit()
+            }
+        }
     }
 }
 
