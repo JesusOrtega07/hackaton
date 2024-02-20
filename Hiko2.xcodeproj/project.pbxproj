@@ -11,6 +11,8 @@
 		0DACA8CD2B854F45002F5A84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DACA8CC2B854F45002F5A84 /* ContentView.swift */; };
 		0DACA8CF2B854F48002F5A84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DACA8CE2B854F48002F5A84 /* Assets.xcassets */; };
 		0DACA8D22B854F48002F5A84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DACA8D12B854F48002F5A84 /* Preview Assets.xcassets */; };
+		0DACA8DA2B855029002F5A84 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DACA8D92B855029002F5A84 /* ColorExtension.swift */; };
+		0DACA8DC2B855176002F5A84 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DACA8DB2B855176002F5A84 /* BackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		0DACA8CC2B854F45002F5A84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0DACA8CE2B854F48002F5A84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DACA8D12B854F48002F5A84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0DACA8D92B855029002F5A84 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		0DACA8DB2B855176002F5A84 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 		0DACA8BE2B854F45002F5A84 = {
 			isa = PBXGroup;
 			children = (
+				0DACA8DB2B855176002F5A84 /* BackgroundView.swift */,
 				0DACA8C92B854F45002F5A84 /* Hiko2 */,
 				0DACA8C82B854F45002F5A84 /* Products */,
 			);
@@ -51,6 +56,7 @@
 		0DACA8C92B854F45002F5A84 /* Hiko2 */ = {
 			isa = PBXGroup;
 			children = (
+				0DACA8D82B854FF7002F5A84 /* Utility */,
 				0DACA8CA2B854F45002F5A84 /* Hiko2App.swift */,
 				0DACA8CC2B854F45002F5A84 /* ContentView.swift */,
 				0DACA8CE2B854F48002F5A84 /* Assets.xcassets */,
@@ -65,6 +71,14 @@
 				0DACA8D12B854F48002F5A84 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0DACA8D82B854FF7002F5A84 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				0DACA8D92B855029002F5A84 /* ColorExtension.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +151,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DACA8DA2B855029002F5A84 /* ColorExtension.swift in Sources */,
 				0DACA8CD2B854F45002F5A84 /* ContentView.swift in Sources */,
+				0DACA8DC2B855176002F5A84 /* BackgroundView.swift in Sources */,
 				0DACA8CB2B854F45002F5A84 /* Hiko2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
